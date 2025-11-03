@@ -208,6 +208,6 @@ __marimo__/
 
 # Project-specific ignores
 # Large datasets should not be versioned; use LFS/DVC or external storage
-llm-classification-finetuning/train.csv
-llm-classification-finetuning/*.parquet
-llm-classification-finetuning/*.feather
+data/train.csv
+data/*.parquet
+data/*.feather
