@@ -1,0 +1,12 @@
+# Core ML stack for LLM classification notebook
+numpy==2.3.4
+pandas==2.3.3
+scikit-learn==1.7.2
+torch==2.9.0
+sentence-transformers==5.1.2
+transformers==4.57.1
+peft==0.17.1
+accelerate==1.11.0
+
+# Optional: enable Kaggle CLI submissions
+# kaggle
