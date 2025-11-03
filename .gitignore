@@ -207,7 +207,7 @@ marimo/_lsp/
 __marimo__/
 
 # Project-specific ignores
-# Large datasets should not be versioned; use LFS/DVC or external storage
-data/train.csv
+# datasets should not be versioned; use LFS/DVC or external storage
+*.csv
 data/*.parquet
 data/*.feather
