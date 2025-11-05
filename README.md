@@ -36,6 +36,7 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
+Download the trainset (train.csv) from the kaggle competition and put it inside data folder as train.csv
 ---
 
 ## 🧩 Project Structure
