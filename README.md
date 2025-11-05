@@ -56,3 +56,5 @@ LLM_Classification_Finetuning/
 
 The baseline model uses simple lexical and structural features (e.g., length, paragraph count, list usage, quotes) identified through exploratory data analysis (EDA).  
 We train a multinomial **Logistic Regression** model using **Stratified K-Fold Cross-Validation** to ensure balanced evaluation across classes.
+
+**Sentence-transformers/all-MiniLM-L6-v2** is used to generate embeddings model. Prompt-response pairs are created ,and responses are concatenated into a single feature vector. A **Logistic Regression** classifier trained on these embeddings. Embedding model have a similar performance to the lexical baseline.
