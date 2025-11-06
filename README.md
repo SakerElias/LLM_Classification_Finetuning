@@ -55,9 +55,23 @@ LLM_Classification_Finetuning/
 
 ---
 
-## 📊 Modeling Summary
+## 📊 Notebooks & Modeling Summary
 
+**step1.ipynb**
 The baseline model uses simple lexical and structural features (e.g., length, paragraph count, list usage, quotes) identified through exploratory data analysis (EDA).  
 We train a multinomial **Logistic Regression** model using **Stratified K-Fold Cross-Validation** to ensure balanced evaluation across classes.
 
-**Sentence-transformers/all-MiniLM-L6-v2** is used to generate embeddings model. Prompt-response pairs are created ,and responses are concatenated into a single feature vector. A **Logistic Regression** classifier trained on these embeddings. Embedding model have a similar performance to the lexical baseline.
+**step2.ipynb**
+**all-MiniLM-L6-v2** is used to generate embeddings model. Prompt-response pairs are created ,and responses are concatenated into a single feature vector. A **Logistic Regression** classifier trained on these embeddings. Embedding model have a similar performance to the lexical baseline.
+
+**step3.ipynb**
+This notebook allows to choose between 4 modeling options : 
+    Use a calibrated Logistic Regression model with added lexical features compared to step 1
+    Use an upgraded version of **all-MiniLM-L6-v2** with a calibrated classifier on top
+    Use LoRA to fine-tune a larger embedding model : **DeBERTa** and use it with a classifier
+    Use ensembling techniques to mix between the first and the second model.
+
+**step3 (kaggle version)** is an adapted version of step 3 to Kaggle's environment and restrictions for submission (no internet rule typically)
+
+**step4.ipynb**
+In this notebook we perform a deeper Error and Bias Analysis of 3 of our models from step 3 (Lexical (Isotonic), Embeddings (Isotonic), and Ensemble (Weighted + Temperature Scaling))
