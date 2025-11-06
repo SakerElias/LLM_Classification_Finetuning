@@ -44,8 +44,10 @@ Download the trainset (train.csv) from the kaggle competition and put it inside 
 ```
 LLM_Classification_Finetuning/
 │
+├── artifacts/                # contains saved embeddings for models
 ├── data/                     # train.csv, test.csv, sample_submission.csv
 ├── notebooks/                # EDA and modeling notebooks
+├── outputs/                  # contains submissions for each step (csv files)
 ├── requirements.txt
 ├── README.md
 └── report.pdf
