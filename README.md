@@ -57,6 +57,9 @@ LLM_Classification_Finetuning/
 
 ## 📊 Notebooks & Modeling Summary
 
+**EDA**
+In this notebook we perform a quick Exploratory Data Analysis to try to understand the nature of our dataset and which features could be useful for modelling, especially in step 1
+
 **step1.ipynb**
 The baseline model uses simple lexical and structural features (e.g., length, paragraph count, list usage, quotes) identified through exploratory data analysis (EDA).  
 We train a multinomial **Logistic Regression** model using **Stratified K-Fold Cross-Validation** to ensure balanced evaluation across classes.
@@ -74,4 +77,4 @@ This notebook allows to choose between 4 modeling options :
 **step3 (kaggle version)** is an adapted version of step 3 to Kaggle's environment and restrictions for submission (no internet rule typically)
 
 **step4.ipynb**
-In this notebook we perform a deeper Error and Bias Analysis of 3 of our models from step 3 (Lexical (Isotonic), Embeddings (Isotonic), and Ensemble (Weighted + Temperature Scaling))
+In this notebook we perform a deeper Error and Bias Analysis of three of our models from step 3 (Lexical (Isotonic), Embeddings (Isotonic), and Ensemble (Weighted + Temperature Scaling))
