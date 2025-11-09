@@ -1,6 +1,6 @@
 # 🧠 LLM_Classification_Finetuning
 
-This repository contains our work for the **Machine Learning Project Course**, where we try to solve a **text classification** challenge from this [Kaggle competition](https://www.kaggle.com/competitions/llm-classification-finetuning).  
+This repository contains our work for the **Machine Learning Project**, where we try to solve a **text classification** challenge from this [Kaggle competition](https://www.kaggle.com/competitions/llm-classification-finetuning).  
 
 The goal is to explore how pretrained transformer-based language models can be efficiently adapted for **human preference prediction** in LLM-generated responses, using modern fine-tuning and lightweight modeling strategies.
 
